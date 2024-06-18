@@ -2,7 +2,7 @@
 # and copy here
 en:
   brand:
-    title: ArchivesSpace Public Interface
+    title: ""
     welcome_head: "Welcome to ArchivesSpace"
     welcome_message: "Search across our collections, digital materials, and more."
     welcome_page_title: "" 
