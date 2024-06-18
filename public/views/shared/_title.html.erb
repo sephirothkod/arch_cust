@@ -1,0 +1,13 @@
+
+
+<%# build URL with slugs depending on the primary type %>
+<% url = resource_base_url(result) %>
+<%= (props.fetch(:full,false)? '<h1 class="custom-title">' : '<h3>').html_safe %>
+<% if !props.fetch(:full,false) %>
+  <a class="record-title" href="<%= app_prefix(url) %>">
+    <%== props.fetch(:infinite_item, false) ? result.parse_full_title(true) : result.display_string %>
+  </a>
+<% else %>
+  <%== result.display_string %>
+<% end %>
+<%= (props.fetch(:full,false)? '</h1>' : '</h3>').html_safe %>

@@ -1,0 +1,77 @@
+$alert-warning-text: red;
+
+// (cvk) ArchivesSpace PUI defines styles with all these SCSS files in
+// `public/app/assets/stylesheets`. The colors of the interface are set in
+// `_variables.scss`, but there's no good way to customize these variables
+// because they are compiled and baked into the PUI's WAR file in the
+// ArchivesSpace distribution.
+//
+// The only way I found to customize the variables is to compile an overlay
+// made up of all of the SCSS files that ArchivesSpace uses.
+
+@import "foundation/_functions.scss";
+@import "archivesspace/fonts";
+@import "archivesspace/colors";  // <--- customize colors in this file
+@import "archivesspace/variables";
+@import "archivesspace/aspace"; 
+@import "archivesspace/record-type-badge";
+
+body {
+  color: #2e2925;
+  font-family: Lato;
+}
+
+#header > .row {
+  height: auto;
+  > div {
+    padding: 20px;
+  }
+}
+#header .logo {
+  float: none;
+  height: 100px;
+}
+@media only screen and (max-width: 768px) {
+  #header {
+    img.logo {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+div.nicholls-title {
+  padding-top: 20px;
+  text-align: right;
+  font-size: 140%;
+  font-weight: bold;
+  ul {
+    list-style-type: none;
+    line-height: 1.2;
+    li:nth-child(1) {
+      font-size: 150%;
+      padding-top: 30px;
+    }
+    li:nth-child(2) {
+      color: #7C878E;
+    }
+    li:nth-child(3) {
+      color: $nicholls-red;
+    }
+  }
+}
+.btn-primary {
+  background-color: $nicholls-red;
+  border-color: $nicholls-red-dark;
+}
+div#intro {
+  margin-top: 1em;
+}
+div.panel-footer {
+  text-align: right;
+  border: none;
+  background-color: transparent;
+}
+
+.custom-title {
+  font-size: 2rem;
+}
