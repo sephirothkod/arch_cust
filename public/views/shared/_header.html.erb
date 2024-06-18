@@ -2,7 +2,7 @@
   <div class="row">
     <% if AppConfig[:pui_hide][:custom] %>
       <div class="col-sm-6">
-        <% if Rails.application.assets.find_asset('assets/logo.png') %>
+        <% if Rails.application.assets.find_asset('logo.png') %>
           <a href="/"><img class="logo" src="<%= asset_url('assets/logo.png') %>" alt="<%= I18n.t('brand.logo_alt') %>" /></a>
         <% else %>
           <a href="/"><img class="logo" src="<%= asset_url('assets/logo.jpg') %>" alt="<%= I18n.t('brand.logo_alt') %>" /></a>
