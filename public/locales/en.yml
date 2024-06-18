@@ -1,0 +1,14 @@
+# (cvk) find the parts you need in public/config/locales/en.yml
+# and copy here
+en:
+  brand:
+    title: ArchivesSpace Public Interface
+    welcome_head: "Welcome to ArchivesSpace"
+    welcome_message: "Search across our collections, digital materials, and more."
+    welcome_page_title: "" 
+    logo_alt: "ArchivesSpace - a community served by Lyrasis."
+    welcome_paragraphs:
+      - title: "<h2>Things to note</h2>"
+        description: "<ul><li>Collections are tagged with subjects and names; browse all three through the navigation at the top of the page</li></ul>"
+
+
